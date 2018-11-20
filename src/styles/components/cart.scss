@@ -1,0 +1,41 @@
+.cart{
+    &__products-table{
+        width: 100%;
+        border-spacing: 0;
+        margin-bottom: 30px;
+    }
+    &__products-header{
+
+    }
+    &__table-row{
+        &:nth-child(2n+3)>.cart__table-cell{
+            background-color: #ccc;
+        }
+        &:last-child>.cart__table-cell{
+            border-bottom: 1px solid #000;
+        }
+    }
+    &__table-cell{
+        border: 1px solid #000;
+        border-right: none;
+        border-bottom: none;
+        padding: 10px;
+        &:last-child{
+            border-right: 1px solid #000;
+        }
+    }
+    &__table-cell--header{
+        background-color: #b3b3b3;
+    }
+    &__discount{
+        .button{
+            margin: 0px 10px;
+        }
+    }
+    &__input{
+        border: 2px solid #000;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 30px;
+    }
+}
